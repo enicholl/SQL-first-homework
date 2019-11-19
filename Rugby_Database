@@ -5,7 +5,7 @@ CREATE TABLE Clubs(
 	Club_ID INT PRIMARY KEY IDENTITY (1,1),
 	Club_name VARCHAR (60),
 	Club_country VARCHAR (60)
-)
+);
 
 CREATE TABLE Players(
 	Player_ID INT PRIMARY KEY IDENTITY (1,1),
@@ -14,4 +14,4 @@ CREATE TABLE Players(
 	Position VARCHAR (30),
 	Club_ID INT,
 	FOREIGN KEY (Club_ID) REFERENCES Clubs (Club_ID)
-)
+);
